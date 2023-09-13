@@ -2,6 +2,11 @@
 :root {
     --square-size: 100px;
 }
+
+.wrapperChessboard {
+    display: flex;
+}
+
 .Chessboard {    
     display: grid;
     grid-template-columns: repeat(8, var(--square-size));
@@ -9,27 +14,50 @@
     border-width: 3px;
     border-color: #000;
     margin: auto;
+    /* perspective: 100px;  */
+    /* transform: rotateY(30deg); */
+    transform: perspective(1000px) rotateX(30deg);
+
+    box-shadow: 0 0 100px rgba(0, 0, 0, 1); 
 
 }
+
+
 
 .blackSquare {
     width: var(--square-size);
     height: var(--square-size);
     display: flex;
     align-items: center;
-    justify-content: center;
+
     background-color: #000;
     font-size: 20px;
     color: #fff;
+    transition: background-color 0.3s, transform 0.3s; 
 
 }
+
+
+.blackSquare:hover {
+    background-color: #242424; /* Change the background color on hover */
+}
+
+
 
 .whiteSquare {
     width: var(--square-size);
     height: var(--square-size);
     display: flex;
     align-items: center;
-    justify-content: center;
+    
     background-color: #fff;
     font-size: 20px;
+    border-width: 3px;
+    border-color: #000;
+    border: #000;
+    transition: background-color 0.3s; 
+}
+
+.whiteSquare:hover {
+    background-color: #b8b8b8; /* Change the background color on hover */
 }

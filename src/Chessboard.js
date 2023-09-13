@@ -6,10 +6,10 @@ class Chessboard extends Component {
 
     square(loc, color) {
         let _className;
-        if (color == "b") {
+        if (color === "b") {
             _className = "blackSquare"
         }
-        if (color == "w") {
+        if (color === "w") {
             _className = "whiteSquare"
         }
         return <div className={_className} location={loc}></div>
@@ -30,7 +30,11 @@ class Chessboard extends Component {
 
 
 
-        return <div className="Chessboard">{board}</div>;
+        return (
+            <div className='wrapperChessboard'>
+                <div className="Chessboard">{board}</div>
+            </div>
+        );
     }
 }
 
