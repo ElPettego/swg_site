@@ -1,0 +1,35 @@
+/* Chessboard.css */
+:root {
+    --square-size: 100px;
+}
+.Chessboard {    
+    display: grid;
+    grid-template-columns: repeat(8, var(--square-size));
+    grid-gap: 0px;
+    border-width: 3px;
+    border-color: #000;
+    margin: auto;
+
+}
+
+.blackSquare {
+    width: var(--square-size);
+    height: var(--square-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.whiteSquare {
+    width: var(--square-size);
+    height: var(--square-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    font-size: 20px;
+}
