@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 import Chessboard from './Chessboard';
-import King from './King';
 
 
 function App() {

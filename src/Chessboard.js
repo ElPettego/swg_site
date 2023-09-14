@@ -4,7 +4,6 @@ import './Chessboard.css'; // Import CSS for styling
 import King from './King';
 
 class Chessboard extends Component {
-
     square(loc, color, piece) {
         let _className;
         if (color === "b") {

@@ -4,7 +4,7 @@ import './King.css';
 class King extends Component {
     render() {
         return (
-            <div className='King' draggable='true'></div>
+            <div className="King" draggable='true'></div>
         );
     }
 
