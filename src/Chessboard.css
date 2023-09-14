@@ -5,6 +5,7 @@
 
 .wrapperChessboard {
     display: flex;
+    height: 100%;
 }
 
 .Chessboard {    
@@ -14,6 +15,7 @@
     border-width: 3px;
     border-color: #000;
     margin: auto;
+    /* margin-top: 10%; */
     /* perspective: 100px;  */
     /* transform: rotateY(30deg); */
     transform: perspective(1000px) rotateX(30deg);

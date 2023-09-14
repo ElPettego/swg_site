@@ -1,0 +1,14 @@
+.wrapperKing {
+    display: flex;
+}
+
+.King {
+    width: 90px;
+    height: 90px;
+    color: white;
+
+    /* order: -1; */
+
+    /* transform: perspective(1000px) rotateX(30deg); */
+
+}
