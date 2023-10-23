@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapperBanner {
+    display: flex;
+    height: 90vh; /* Full viewport height */
+}
+
+.banner {
+    width: 100px; /* Adjust the width as needed */
+    background-color: #333;
+    color: #31ec10;
+    text-align: center;
+    writing-mode: vertical-rl; /* Vertical text layout */
+    transform: rotate(180deg); /* Rotate the text */
+    padding: 20px 0;
+}
+
+.content {
+    flex-grow: 1; /* Expands to fill the remaining space */
+    padding: 20px;
+    background-color: #f4f4f4;
+}

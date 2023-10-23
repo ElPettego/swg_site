@@ -1,11 +1,11 @@
 /* Chessboard.css */
 :root {
-    --square-size: 100px;
+    --square-size: 80px;
 }
 
 .wrapperChessboard {
     display: flex;
-    height: 100%;
+    height: 80%;
 }
 
 .Chessboard {    

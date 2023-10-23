@@ -1,0 +1,32 @@
+/* In a separate CSS file, e.g., styles.css */
+.header {
+    background-color: #333; /* Background color for the header */
+    color: #fff;            /* Text color for the header */
+    padding: 10px;           /* Padding for the header */
+  }
+  
+.nav {
+display: flex;           /* Use flexbox to spread the nav items horizontally */
+justify-content: space-between; /* Spread items evenly */
+}
+
+.nav-list {
+list-style: none;        /* Remove list bullet points */
+padding: 0;
+display: flex;           /* Make the list items flex containers */
+}
+
+.nav-item {
+margin-right: 20px;      /* Add spacing between list items */
+}
+
+.nav-item:last-child {
+margin-right: 0;         /* Remove margin from the last list item */
+}
+
+.nav-item a {
+    text-decoration: none;   /* Remove underlines from the links */
+    color: #fff;             /* Text color for the links */
+}
+
+/* Add additional styling as needed */
