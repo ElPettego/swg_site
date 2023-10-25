@@ -10,24 +10,28 @@ body {
     height: 10%;
     width: 100%;
     background-color: #333;
+    overflow: hidden;
     /* width: 100; Full viewport height */
 }
 
 .letter {
-    font-size: 24px;
+    /* flex: auto; */
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 32px;
     font-weight: bold;
     color: #3498db;
     transform-style: preserve-3d;
     animation: spin 10s linear infinite;
-    text-shadow: 2px 2px 3px #3498dbff;
+    /* text-shadow: 4px 4px 6px #3498dbff; */
 }
 
 @keyframes spin {
     0% {
         transform: rotateY(0deg);
     }
-    90% {
-        transform: rotateY(360deg);
+    75% {
+        transform: rotateY(180deg);
     }
 }
 
